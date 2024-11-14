@@ -10,8 +10,8 @@ app.post('/webhook', (req, res) => {
     const message = req.body.message || 'No message';
 
     // Replace with your Telegram bot token and chat ID
-    const token = 'YOUR_BOT_TOKEN';
-    const chat_id = 'YOUR_CHAT_ID';
+    const token = '7410108739:AAFpcexuuiNZYd3ZDzgIGPXBKJFGoCMIOeE';
+    const chat_id = '5090735114';
     const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${message}`;
 
     axios.get(url)
